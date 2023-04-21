@@ -7,3 +7,8 @@ build:
 
 run:
 	docker compose up
+
+clean:
+	rm -rf config/*
+	git restore config/server.cfg
+	
