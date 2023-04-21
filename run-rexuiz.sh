@@ -13,6 +13,7 @@ if [ "$WHITELIST_ENABLED" = "true" ]; then
     for ip in "${allowed_ips[@]}"
     do
         ufw allow from "$ip" to any port 26000 proto udp
+        echo "Allowed IP: $ip"
     done
 
     ufw --force enable
