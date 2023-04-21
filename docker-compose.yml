@@ -4,8 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    privileged: true
     environment:
-      - WHITELIST_ENABLED=true
+      - WHITELIST_ENABLED=false
     volumes:
       - ./config:/home/rexuiz/.rexuiz/data
     ports:
