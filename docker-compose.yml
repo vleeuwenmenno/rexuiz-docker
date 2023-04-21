@@ -1,7 +1,11 @@
 version: '3'
 services:
   rexuiz:
-    image: rexuiz-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - WHITELIST_ENABLED=true
     volumes:
       - ./config:/home/rexuiz/.rexuiz/data
     ports:

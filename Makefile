@@ -6,7 +6,7 @@ build:
 	docker build -t $(IMAGE_NAME) .
 
 run:
-	docker compose up
+	docker-compose up
 
 clean:
 	rm -rf config/*
