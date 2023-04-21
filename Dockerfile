@@ -15,7 +15,6 @@ RUN su rexuiz -c 'bash /home/rexuiz/rexuiz_install.sh /home/rexuiz/Rexuiz/'
 RUN su rexuiz -c 'chmod 755 /home/rexuiz/Rexuiz/server/rexuiz-linux-dedicated-x86_64'
 
 # Expose server port
-EXPOSE 26000/tcp
 EXPOSE 26000/udp
 
 # Start server

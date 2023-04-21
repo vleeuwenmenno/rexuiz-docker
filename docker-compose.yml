@@ -5,4 +5,4 @@ services:
     volumes:
       - ./config:/home/rexuiz/.rexuiz/data
     ports:
-      - "26000:26000"
+      - "26000:26000/udp"
